@@ -43,9 +43,6 @@ function App() {
                         <div className={style.table}>
                             
                         </div>
-                        <div className={style.level}>
-                            <a href="">Level {index + 1}</a>
-                        </div>
                     </div>
                 ))}
                 <div className={style.game}>🔁</div>
