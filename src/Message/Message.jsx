@@ -5,6 +5,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
 import { getDatabase, ref, set, onValue, push, update } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
 import styles from "./Message.module.css"
+import BasicNavbar from '../Basic/BasicNavbar';
 
 const firebaseConfig = {
     apiKey: "AIzaSyC94X37bt_vhaq5sFVOB_ANhZPuE6219Vo",
@@ -77,15 +78,7 @@ const Message = () => {
             <video autoPlay loop>
                 <source src={back} />
             </video>
-            <aside className={styles.basicAside}>
-                <Link to="/">
-                <i className={`fa-solid fa-house ${styles.icon}`}></i>
-                </Link>
-                <i className={`fa-solid fa-layer-group ${styles.icon}`}></i>
-                <Link to="/chat">
-                    <i className={`fa-solid fa-message ${styles.icon}`}></i>
-                </Link>
-            </aside>
+            <BasicNavbar />
             <div className={styles.chat}>
                 <div className={styles.chatContainer}>
                     <div className={styles.chatHeader}>
